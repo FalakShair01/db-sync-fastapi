@@ -1,4 +1,3 @@
-Sure, I'll update the README with the new project structure and setup instructions:
 
 ---
 
