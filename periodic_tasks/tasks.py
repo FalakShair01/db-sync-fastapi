@@ -37,5 +37,5 @@ def get_subscription_status_from_db1(db_session: Session, email: str) -> str:
 async def schedule_sync_task():
     # Schedule sync task to run periodically
     scheduler = AsyncIOScheduler()
-    scheduler.add_job(sync_subscriptions, "interval", seconds=1)  # Run every hour
+    scheduler.add_job(sync_subscriptions, "interval", seconds=10)  # Run every 10 second
     scheduler.start()

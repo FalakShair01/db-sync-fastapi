@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from database.db import SessionLocal, engine
 from models import subscription1
-import tasks
+import periodic_tasks.tasks as tasks
 
 
 app = FastAPI()

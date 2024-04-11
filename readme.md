@@ -21,8 +21,11 @@ project_directory/
 │   ├── __init__.py
 │   ├── subscription1.py
 │   └── subscription2.py
+|
+├── periodic_tasks/
+│   ├── tasks.py
+│   └── __init__.py
 │
-├── tasks.py
 ├── __init__.py
 ├── main.py
 └── requirements.txt
@@ -31,7 +34,8 @@ project_directory/
 - **database/db.py**: Contains SQLAlchemy setup including database URL, engine, and session maker.
 - **models/subscription1.py**: Contains the Subscription1 model representing the subscription table of database 1.
 - **models/subscription2.py**: Contains the Subscription2 model representing the subscription table of database 2.
-- **tasks.py**: Contains the logic for synchronizing subscription status between databases.
+- **periodic_tasks/**: This directory contains the periodic tasks module.
+    - **tasks.py**: Contains the logic for synchronizing subscription status between databases.
 - **__init__.py**: Initializes the app module.
 - **main.py**: Entry point of the FastAPI application.
 - **requirements.txt**: Contains the project dependencies.
